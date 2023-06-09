@@ -1,0 +1,78 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(199, 194, 194);
+}
+#Title {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+.main-container {
+  min-height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  border: 2px solid;
+  padding-top: 2rem;
+}
+
+.picture-container {
+  height: 200px;
+  width: 200px;
+  border: 1px solid;
+  background-color: white;
+}
+
+#picture1 {
+  background-image: url(./images/apples.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  visibility: visible;
+}
+#picture2 {
+  background-image: url(./images/oranges.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  visibility: visible;
+}
+#picture3 {
+  background-image: url(./images/bananas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  visibility: visible;
+}
+
+.answers-container {
+  min-height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  border-radius: 0.5rem;
+}
