@@ -80,8 +80,8 @@ button {
   border: dashed 3px black;
 }
 .drag-over-wrong {
-  border: dashed 3px red;
+  border: 6px dashed red;
 }
 .drag-over-correct {
-  border: dashed 3px green;
+  border: dashed 6px green;
 }

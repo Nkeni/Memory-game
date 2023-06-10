@@ -22,9 +22,8 @@ function dragStart(e) {
   console.log("dragging");
 }
 
-/* drop targets */
-const pictureContainer = document.querySelectorAll(".picture-container");
-
+//! drop targets
+let pictureContainer = document.querySelectorAll(".picture-container");
 pictureContainer.forEach((container) => {
   container.addEventListener("dragenter", dragEnter);
   container.addEventListener("dragover", dragOver);
@@ -49,7 +48,7 @@ function dragLeave(e) {
 function drop(e) {
   e.target.classList.remove("drag-over");
 
-  // get the draggable element
+  //! Get the draggable element
   const id = e.dataTransfer.getData("text/plain");
   const draggable = document.getElementById(id);
   console.log("dragged word;", draggable.id);
@@ -71,6 +70,18 @@ function drop(e) {
       pic2.style.visibility = "hidden";
       pic3.style.visibility = "hidden";
     }, 1000);
+    //! remove the wrong sign after 2 second
+    setTimeout(function () {
+      e.target.classList.remove("drag-over-wrong");
+    }, 2000);
+  }
+  //! condition to check if all matches are correct
+  if (
+    pictureContainer[0].classList.value.includes("drag-over-correct") &&
+    pictureContainer[1].classList.value.includes("drag-over-correct") &&
+    pictureContainer[2].classList.value.includes("drag-over-correct")
+  ) {
+    alert("Congratulations, You have won!!!");
   }
 
   // display the draggable element
