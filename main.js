@@ -60,6 +60,17 @@ function drop(e) {
   } else {
     e.target.classList.add("drag-over-wrong");
     alert("Wrong,YOU LOST, try again");
+    //! After loosing, show images for 1 second again
+    pic1.style.visibility = "visible";
+    pic2.style.visibility = "visible";
+    pic3.style.visibility = "visible";
+
+    //! Hide images after one second again
+    setTimeout(function () {
+      pic1.style.visibility = "hidden";
+      pic2.style.visibility = "hidden";
+      pic3.style.visibility = "hidden";
+    }, 1000);
   }
 
   // display the draggable element
