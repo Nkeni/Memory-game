@@ -59,7 +59,33 @@ body {
   width: 200px;
   visibility: visible;
 }
-
+#picture4 {
+  background-image: url(./images/kiwi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  visibility: visible;
+}
+#picture5 {
+  background-image: url(./images/strawberry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  visibility: visible;
+}
+#picture6 {
+  background-image: url(./images/pineapple.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  visibility: visible;
+}
 .answers-container {
   min-height: 30vh;
   width: 100vw;
@@ -80,8 +106,15 @@ button {
   border: dashed 3px black;
 }
 .drag-over-wrong {
-  border: 6px dashed red;
+  border: 6px solid red;
 }
 .drag-over-correct {
-  border: dashed 6px green;
+  border: dashed 6px black;
+}
+
+.drag-over-win {
+  border: 6px solid green;
+}
+.drag-over-lose {
+  border: 6px dashed red;
 }
