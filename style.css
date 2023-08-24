@@ -10,6 +10,12 @@ body {
   text-align: center;
   background-color: rgb(199, 194, 194);
 }
+
+#home {
+  background-color: green;
+  color: white;
+  border-radius: 0.5rem;
+}
 #Title {
   margin: 2rem 0;
   font-size: 3rem;
@@ -98,7 +104,7 @@ body {
 button {
   width: 100px;
   height: 30px;
-  background-color: green;
+  background-color: red;
   color: white;
   border-radius: 0.5rem;
 }

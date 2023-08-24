@@ -5,6 +5,16 @@ let pic4 = document.getElementById("picture4");
 let pic5 = document.getElementById("picture5");
 let pic6 = document.getElementById("picture6");
 
+let apples = document.getElementById("apples");
+let oranges = document.getElementById("oranges");
+let bananas = document.getElementById("bananas");
+let kiwi = document.getElementById("kiwi");
+let strawberry = document.getElementById("strawberry");
+let pineapple = document.getElementById("pineapple");
+
+//! Array of pictures
+picArray = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6"];
+
 setTimeout(function () {
   pic1.style.visibility = "hidden";
   pic2.style.visibility = "hidden";
@@ -108,12 +118,18 @@ function drop(e) {
     e.target.classList.add("drag-over-wrong");
     alert("Sorry, You have LOST...try again!!!");
 
-    //! After loosing, show images for 1 second again
+    //! After loosing, change the position of images and show images for 1 second again
+    apples.style.order = "3";
     pic1.style.visibility = "visible";
+    oranges.style.order = "4";
     pic2.style.visibility = "visible";
+    bananas.style.order = "1";
     pic3.style.visibility = "visible";
+    kiwi.style.order = "2";
     pic4.style.visibility = "visible";
+    strawberry.style.order = "6";
     pic5.style.visibility = "visible";
+    pineapple.style.order = "5";
     pic6.style.visibility = "visible";
 
     //! Hide images after one second again
