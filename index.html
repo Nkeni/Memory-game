@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Drag and drop memory game</title>
-</head>
-<body>
-     </head>
+  </head>
   <body>
-    
+    <form action="home.html">
+      <button id="home" type="submit" class="button">INSTRUCTIONS</button>
+    </form>
+
     <main class="main-container">
-      
-        <div class="picture-container" id="apples">
-          <div  id="picture1" class="picture"></div>
-        </div>
-        <div class="picture-container" id="oranges">
-          <div  id="picture2" class="picture"></div>
-        </div>
-        <div class="picture-container" id="bananas">
-          <div id="picture3" class="picture"></div>
-        </div>
-        <div class="picture-container" id="kiwi">
-          <div  id="picture4" class="picture"></div>
-        </div>
-        <div class="picture-container" id="strawberry">
-          <div  id="picture5" class="picture"></div>
-        </div>
-        <div class="picture-container" id="pineapple">
-          <div id="picture6" class="picture"></div>
-        </div>
-    
-     
+      <div class="picture-container" id="apples">
+        <div id="picture1" class="picture"></div>
+      </div>
+      <div class="picture-container" id="oranges">
+        <div id="picture2" class="picture"></div>
+      </div>
+      <div class="picture-container" id="bananas">
+        <div id="picture3" class="picture"></div>
+      </div>
+      <div class="picture-container" id="kiwi">
+        <div id="picture4" class="picture"></div>
+      </div>
+      <div class="picture-container" id="strawberry">
+        <div id="picture5" class="picture"></div>
+      </div>
+      <div class="picture-container" id="pineapple">
+        <div id="picture6" class="picture"></div>
+      </div>
     </main>
     <div class="answers-container">
       <button class="word" id="pineapple" draggable="true">Pineapple</button>
-        <button class="word" id="bananas" draggable="true">Bananas</button>
-        <button class="word" id="oranges" draggable="true">Oranges</button>
-        <button class="word" id="kiwi" draggable="true">Kiwi</button>
-        <button class="word" id="apples" draggable="true">Apples</button>
-        <button class="word" id="strawberry" draggable="true">Strawberry</button>
-        
+      <button class="word" id="bananas" draggable="true">Bananas</button>
+      <button class="word" id="oranges" draggable="true">Oranges</button>
+      <button class="word" id="kiwi" draggable="true">Kiwi</button>
+      <button class="word" id="apples" draggable="true">Apples</button>
+      <button class="word" id="strawberry" draggable="true">Strawberry</button>
     </div>
     <script src="main.js"></script>
-
-    <form action="home.html">
-      <button id="home" type="submit" class="button">HOME</button>
-    </form>
-    
-</body>
+  </body>
 </html>

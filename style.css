@@ -15,6 +15,9 @@ body {
   background-color: green;
   color: white;
   border-radius: 0.5rem;
+
+  width: 150px;
+  margin: 2rem 0;
 }
 #Title {
   margin: 2rem 0;
